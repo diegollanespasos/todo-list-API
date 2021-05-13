@@ -1,8 +1,7 @@
 const express = require('express');
-const dotenv = require('dotenv');
+const dotenv = require('dotenv').config();
 const routes = require('./routes/router');
 const connectDB = require('./config/db');
-dotenv.config({ path: './config.env' });
 
 require('dotenv').config({path: __dirname +'/config.env'});
 
